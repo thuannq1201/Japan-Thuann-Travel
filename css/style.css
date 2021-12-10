@@ -1,0 +1,285 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html{
+      font-family: cursive;
+      font-size: 62.5%;
+}
+
+body{
+      width: 100%;
+      height: 100vh;
+      background: url(../images/background-full.jpg) center / cover no-repeat;
+}
+
+.wrapper{
+      max-width: 1600px;
+      margin: 0 auto;
+}
+
+.container{
+      max-width: 1324px;
+      margin: 0 auto;
+}
+
+/* header */
+.header{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4rem;
+      align-items: center;
+}
+
+.header .logo h1{
+      font-size: 4.5rem;
+      cursor: pointer;
+      color: rgb(182, 122, 11);
+      transition: .4s;
+}
+
+.header .logo h1:hover{
+      transform: scale(1.1);
+}
+
+.header .menu {
+      display: flex;
+}
+
+.header .menu li{
+      list-style: none;
+      padding-right: 7rem;
+}
+
+.header .menu li ion-icon{
+      font-size: 3rem;
+}
+
+.header .menu li ion-icon.transform{
+      transform: scaleX(-1);
+}
+
+
+.header .menu li:last-child{
+      margin-right: -7rem;
+}
+
+.header .menu li a{
+      font-size: 2rem;
+      text-decoration: none;
+      color: #000;
+      position: relative;
+      font-weight: bold;
+}
+
+.header .menu li a:hover{
+      opacity: 0.7;
+}
+
+.header .menu li a::after{
+      content: "";
+      width: 0px;
+      height: 4px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      transition:all ease-in-out .4s;
+      background-color: rgb(255, 177, 32);
+}
+
+.header .menu li a:hover::after{
+      width: 50%;
+      transform: translate(100%);
+}
+
+.header-content{
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22rem;
+}
+
+.header-content h2{
+      font-size: 20rem;
+      color: #fff;
+}
+
+.header-content p{
+      font-size: 2.5rem;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-top: 2rem;
+}
+
+.header-content a{
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 3rem;
+      background-color: orange;
+      border-radius: 20px;
+      margin-top: 4rem;
+      transition: .4s;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+
+.header-content a:hover{
+      background-color: rgb(255, 192, 74);
+      transform: translateY(-10px);
+      color: #000;
+}
+
+/* .torii-japan{ */
+
+.torii-japan{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+}
+
+.torii-japan .image{
+      background: url(../images/card-1.jpg) center / cover no-repeat;
+      width: 49%;
+      border-radius: 2rem;
+      overflow: hidden;
+}
+
+.torii-japan .content{
+      width: 49%;
+}
+
+.torii-japan h3{
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.torii-japan p{
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+/* post */
+.post{
+      display: flex;
+      justify-content: space-between;
+
+}
+
+.post .left{
+      width: 100%;
+      
+}
+
+.post .left p strong{
+      font-size: 2.5rem;
+      padding-bottom: 1.5rem;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 3rem;
+}
+
+.post .left p{
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+/* card */
+.card{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15rem;
+      margin-bottom: 10rem;
+}
+.card .card-item{
+      width: 25%;
+      padding: 0 1rem;
+}
+
+.card .card-item:first-child{
+      margin-left: -1rem;
+}
+.card .card-item:last-child{
+      margin-right: -1rem;
+}
+.card .card-img{
+      width: 100%;
+      height: 20rem;
+      border-radius: 20px;
+      overflow: hidden;
+}
+
+.card .card-img img{
+      width: 100%;
+}
+
+img{
+      transition: .4s;
+}
+
+img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+}
+
+/* footer */
+footer{
+      display: flex; 
+      justify-content:center; 
+      align-items:center; 
+      width: 100%;
+      height: 10rem;
+      background: url(../images/card-3.jpg) center /cover no-repeat;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+footer::after{
+      content: "Bản quyền thuộc về Thuann";
+      width: 100%;
+      height: 10rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ccc;
+      font-size: 1.2rem;
+}
+
+/* button */
+#myBtn{
+      padding: 1.2rem;
+      background-color: orange;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      border: none;
+      color: #fff;
+      border-radius: 50px;
+      display: none;
+      transition: .4s;
+      cursor: pointer;
+}
+
+#myBtn ion-icon{
+      font-size: 2.5rem;
+}
+
+#myBtn:hover{
+      background-color: salmon;
+      transform: scale(1.1);
+}
+
