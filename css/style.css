@@ -283,7 +283,7 @@ footer::after{
 
 @media (max-width: 760px) {
       html{
-            font-size: 35.5%;
+            font-size: 47.5%;
       }
       .container{
             padding: 1rem;
@@ -292,7 +292,10 @@ footer::after{
             padding: 0 5rem;
       }
       .header-content{
-            margin-bottom: 14rem;
+            margin-bottom: 7rem;
+      }
+      .header-content h2{
+            font-size: 12rem;
       }
 
       .menu .display-none{
