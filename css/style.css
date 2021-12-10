@@ -170,12 +170,10 @@ body{
 .post{
       display: flex;
       justify-content: space-between;
-
 }
 
 .post .left{
-      width: 100%;
-      
+      width: 100%;     
 }
 
 .post .left p strong{
@@ -189,7 +187,6 @@ body{
 .post .left p{
       font-size: 2rem;
       font-family: Arial, Helvetica, sans-serif;
-
 }
 
 
@@ -281,5 +278,53 @@ footer::after{
 #myBtn:hover{
       background-color: salmon;
       transform: scale(1.1);
+      color: #000;
+}
+
+@media (max-width: 760px) {
+      html{
+            font-size: 30.5%;
+      }
+      .container{
+            padding: 1rem;
+      }
+      .header{
+            padding: 0 5rem;
+      }
+      .header-content{
+            margin-bottom: 19rem;
+      }
+
+      .menu .display-none{
+            display: none;
+      }
+      .torii-japan{
+            flex-direction: column-reverse;
+
+      }
+      .torii-japan .image{
+            width: 100%;
+            height: 30rem;
+            margin-top: 2rem;
+      }
+
+      .torii-japan .content{
+            width: 100%;
+      }
+
+      .card{
+            flex-direction: column;
+            margin-top: 8rem;
+      }
+
+      .card .card-item{
+            width: 100%;
+            padding: 2rem 0;
+      }
+
+      .card .card-item:first-child{
+            margin-left: 0;
+      }
+
 }
 
